@@ -20,7 +20,24 @@ function generateRandomString($length = 10) {
 // Default email info for new email accounts
 // These will only be used if not passed via URL
 $epass = generateRandomString(); // email password
-$edomain = ''; // email domain (usually same as cPanel domain above)
+
+$domain = $_REQUEST['domain'];
+
+switch ($domain) {
+    case 0:
+        $edomain = 'lolmail.org';
+        break;
+    case 1:
+        $edomain = 'webofchange.co.uk';
+        break;
+    case 2:
+        $edomain = 'anti-network.org';
+        break;
+    case 3:
+        $edomain = '6c6f6c.net';
+        break;
+}
+
 $equota = 250; // amount of space in megabytes
 
 ###############################################################
@@ -37,7 +54,6 @@ function getVar($name, $def = '') {
 // check if overrides passed
 $euser = getVar('user', '');
 $epass = getVar('pass', $epass);
-$edomain = getVar('domain', $edomain);
 $equota = getVar('quota', $equota);
 
 if ($euser != '') {
@@ -136,6 +152,16 @@ if ($euser != '') {
               <div class="input-field col s12">
                 <input id="user" type="text" class="validate" name="user" length="20">
                 <label for="user">Username</label>
+              </div>
+
+              <div class="input-field col s12">
+                  <select name="domain" required>
+                    <option value="0">lolmail.org</option>
+                    <option value="1">webofchange.co.uk</option>
+                    <option value="2">anti-network.org</option>
+                    <option value="3">6c6f6c.net</option>
+                  </select>
+                <label>Select Address</label>
               </div>
               <div class="input-field col s12">
                 <input id="password" type="password" class="validate" name="pass" length="20">
