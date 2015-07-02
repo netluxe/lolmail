@@ -28,13 +28,7 @@ switch ($domain) {
         $edomain = 'lolmail.org';
         break;
     case 1:
-        $edomain = 'webofchange.co.uk';
-        break;
-    case 2:
         $edomain = 'anti-network.org';
-        break;
-    case 3:
-        $edomain = '6c6f6c.net';
         break;
 }
 
@@ -131,8 +125,7 @@ if ($euser != '') {
 
      <p>We believe it is vital that essential communication infrastructure be controlled by the people for the people and not corporations or the government.</p>
 
-         <p>We strive to keep our mail as secure and private as we can. We do not log your IP address. (Most services keep detailed records of every machine which connects to the servers. We keep only information which cannot be used to uniquely identify your machine). All your data, including your mail, is stored by lolmail.org in encrypted form. We work hard to keep our servers secure and well defended against any malicious attack. We do not share any of our user data with anyone. We will actively fight any attempt to subpoena or otherwise acquire any user information or logs. We will not read, search, or process any of your incoming or outgoing mail other than by automatic means to protect you from viruses and spam or when directed to do so by you when troubleshooting.</p>
-          </div>
+         </div>
 
           <form class="col s12" name="frmEmail" method="post" id="signUp">
             <div class="row">
@@ -146,9 +139,7 @@ if ($euser != '') {
               <div class="input-field col s12">
                   <select name="domain" required>
                     <option value="0">lolmail.org</option>
-                    <option value="1">webofchange.co.uk</option>
-                    <option value="2">anti-network.org</option>
-                    <option value="3">6c6f6c.net</option>
+                    <option value="1">anti-network.org</option>
                   </select>
                 <label>Select Address</label>
               </div>

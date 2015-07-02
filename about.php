@@ -19,8 +19,8 @@
   <div class="container">
     <div class="row">
           <h3>About lolmail</h3>
-          <p>The project is maintained by <a target="_blank" href="http://twitter.com/0x00byte">@0x00byte</a>, <a target="_blank" href="http://twitter.com/porthunter">@porthunter</a> and <a target="_blank" href="http://twitter.com/b0yz4r3B4cK">@b0yz4r3B4cK</a></p>
-          <p>The project is sponsored by <a target="_blank" href="http://twitter.com/evsec">@evsec</a></p>
+          <p>We strive to keep our mail as secure and private as we can. We do not log your IP address. We keep only information which cannot be used to uniquely identify your machine. All your data, including your mail, is stored by lolmail.org in encrypted form. We work hard to keep our servers secure and well defended against any malicious attack.</p>
+          <p>We will actively fight any attempt to subpoena or otherwise acquire any user information or logs. We will not read, search, or process any of your incoming or outgoing mail other than by automatic means to protect you from viruses and spam or when directed to do so by you when troubleshooting.</p>
           <h4>We do:</h4>
           <ol>
             <li>Take privacy seriously</li>
@@ -40,6 +40,10 @@
             <li>Sensor accounts or give in to any requests from private companies to delete an account</li>
             <li>Ever go back on our word, we would rather pull the plug than compromise on our mission</li>
           </ol>
+          <h3>The Team</h3>
+          <p>The project is maintained by <a target="_blank" href="http://twitter.com/0x00byte">@0x00byte</a>, <a target="_blank" href="http://twitter.com/porthunter">@porthunter</a> and <a target="_blank" href="http://twitter.com/b0yz4r3B4cK">@b0yz4r3B4cK</a></p>
+          <h3>Sponsors</h3>
+          <p>The project is sponsored by <a target="_blank" href="http://twitter.com/evsec">@evsec</a></p>
 
    </div>
 
@@ -51,7 +55,6 @@
         <div class="col l6 s12">
           <h5 class="white-text">About </h5>
           <p class="grey-text text-lighten-4">We believe it is vital that essential communication infrastructure be controlled by the people for the people and not corporations or the government.</p>
-
 
         </div>
         <div class="col l3 s12">
