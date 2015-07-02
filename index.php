@@ -89,21 +89,10 @@ if ($euser != '') {
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <ul class="right hide-on-med-and-down">
-        <li><a href="https://vps5542.inmotionhosting.com:2096/">Login</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="https://vps5542.inmotionhosting.com:2096/">Login</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+  <?php require_once('includes/menu.php'); ?>
 
   <img id="logo" src="images/logo.png" alt="" />
-  <h1 id="intro-txt">6c6f6c.net Email Account Creator</h1>
+  <h1 id="intro-txt">lolmail.org Anonymous Email</h1>
 
   <div class="container">
     <div class="row">
@@ -136,13 +125,13 @@ if ($euser != '') {
           <div class="col s12">
             <h2 id="paralax-overlay" class="center-align">Want a free email account? Then you can have one.<h2>
               <hr>
-             <h3>Why 6c6f6c is needed</h3>
+             <h3>Why lolmail is needed</h3>
 
     <p>Can you rely on a corporate email provider for confidentiality of your sensitive email communications? Not only do they typically scan and record the content of your messages for a wide variety of purposes, they also concede to the demands of governments that restrict digital freedom and fail to have strict policies regarding their user’s privacy. Not to mention their obviously commercial interests.</p>
 
      <p>We believe it is vital that essential communication infrastructure be controlled by the people for the people and not corporations or the government.</p>
 
-         <p>We strive to keep our mail as secure and private as we can. We do not log your IP address. (Most services keep detailed records of every machine which connects to the servers. We keep only information which cannot be used to uniquely identify your machine). All your data, including your mail, is stored by 6c6f6c.net in encrypted form. We work hard to keep our servers secure and well defended against any malicious attack. We do not share any of our user data with anyone. We will actively fight any attempt to subpoena or otherwise acquire any user information or logs. We will not read, search, or process any of your incoming or outgoing mail other than by automatic means to protect you from viruses and spam or when directed to do so by you when troubleshooting.</p>
+         <p>We strive to keep our mail as secure and private as we can. We do not log your IP address. (Most services keep detailed records of every machine which connects to the servers. We keep only information which cannot be used to uniquely identify your machine). All your data, including your mail, is stored by lolmail.org in encrypted form. We work hard to keep our servers secure and well defended against any malicious attack. We do not share any of our user data with anyone. We will actively fight any attempt to subpoena or otherwise acquire any user information or logs. We will not read, search, or process any of your incoming or outgoing mail other than by automatic means to protect you from viruses and spam or when directed to do so by you when troubleshooting.</p>
           </div>
 
           <form class="col s12" name="frmEmail" method="post" id="signUp">
@@ -150,7 +139,7 @@ if ($euser != '') {
               <hr>
               <h3>Sign up here</h3>
               <div class="input-field col s12">
-                <input id="user" type="text" class="validate" name="user" length="20">
+                <input id="user" type="text" class="validate" name="user" length="30">
                 <label for="user">Username</label>
               </div>
 
@@ -164,7 +153,7 @@ if ($euser != '') {
                 <label>Select Address</label>
               </div>
               <div class="input-field col s12">
-                <input id="password" type="password" class="validate" name="pass" length="20">
+                <input id="password" type="password" class="validate" name="pass" length="30">
                 <label for="password">Password</label>
               </div>
             </div>
@@ -191,22 +180,21 @@ if ($euser != '') {
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" target="_blank" href="http://twitter.com/6c6net">Twitter</a></li>
+            <li><a class="white-text" target="_blank" href="http://twitter.com/lolmaildotorg">Twitter</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Contact</h5>
           <ul>
-            <li><a class="white-text" href="#!">support@6c6f6c.net</a></li>
+            <li><a class="white-text" href="#!">support@lolmail.org</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Servers donated by <a target="_blank" href="http://twitter.com/evsec">@evsec</a><br>
-      service made by <a target="_blank" href="http://twitter.com/0x00byte">@0x00byte</a>, <a target="_blank" href="http://twitter.com/porthunter">@porthunter</a> and <a target="_blank" href="http://twitter.com/faghack">@faghack</a>
-      </div>
+        copyright 2015 - lolmail.org
+    </div>
     </div>
   </footer>
 
