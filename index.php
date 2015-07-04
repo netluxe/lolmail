@@ -1,21 +1,12 @@
 <?php
-//exampledot.com for domain
+require_once('includes/functions.php');
+if ( is_session_started() === FALSE ) session_start();
 
 // cPanel info
 $cpuser = ''; // cPanel username
 $cppass = ''; // cPanel password
 $cpdomain = ''; // cPanel domain or IP
 $cpskin = '';  // cPanel skin. Mostly x or x2.
-
-function generateRandomString($length = 10) {
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
-    }
-    return $randomString;
-}
 
 // Default email info for new email accounts
 // These will only be used if not passed via URL
@@ -37,13 +28,6 @@ $equota = 250; // amount of space in megabytes
 ###############################################################
 # END OF SETTINGS
 ###############################################################
-
-function getVar($name, $def = '') {
-  if (isset($_REQUEST[$name]))
-    return $_REQUEST[$name];
-  else
-    return $def;
-}
 
 // check if overrides passed
 $euser = getVar('user', '');
